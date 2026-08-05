@@ -27,3 +27,13 @@ body{font-family:"Barlow Condensed","Arial Narrow",sans-serif}.hero h1,.menu-pan
 /* Extended wordmark proportion */
 .hero h1{width:max-content;transform:scaleX(1.1);transform-origin:left center}
 @media(max-width:760px){.hero h1{transform:scaleX(1.06)}}
+
+/* Desktop hero composition matched to the approved cover */
+@media(min-width:761px){
+  .nav{height:auto;padding:5.8vh 3.4vw}
+  .hero{height:100svh;min-height:700px;padding:0;display:block;position:relative}
+  .hero-meta{position:absolute;top:20.5%;left:3.4%;right:3.4%}
+  .hero h1{position:absolute;top:28%;left:4.6%;margin:0;width:max-content;max-width:none;font-size:clamp(150px,17.2vw,350px);line-height:.82;transform:scaleX(1.04);transform-origin:left top}
+  .hero .intro{position:absolute;top:62.5%;left:48.2%;right:4%;width:auto;max-width:none;margin:0;font-size:clamp(13px,1.05vw,21px);line-height:1.13}
+  .hero .scroll-hint{position:absolute;left:3.4%;bottom:6%;margin:0}
+}
