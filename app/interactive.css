@@ -78,3 +78,7 @@ footer>a{font-size:20px;transition:transform .25s ease,opacity .25s ease}footer>
 /* Qinglan brand case */
 .project-card.qinglan .project-image{background:#edf1f5}.project-card.qinglan .project-image img{object-fit:cover;object-position:top center}.qinglan-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 18px}.qinglan-gallery figure:nth-child(n){grid-column:auto}.qinglan-gallery figure:first-child{grid-column:1/-1;display:flex;flex-direction:column;align-items:center}.qinglan-gallery figure:first-child>span{align-self:stretch}.qinglan-gallery figure:first-child img{width:min(72%,1050px)}.qinglan-gallery figure>span{font-size:13px;padding:10px 0}.qinglan-gallery img{margin-top:12px}
 @media(max-width:760px){.qinglan-gallery{display:block}.qinglan-gallery figure{margin-bottom:25px}.qinglan-gallery figure:first-child img{width:100%}}
+
+/* Bamboo poster two-column layout */
+.bamboo-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 18px}.bamboo-gallery figure:nth-child(n){grid-column:auto}.bamboo-gallery img{width:100%;height:auto;object-fit:contain}
+@media(max-width:760px){.bamboo-gallery{display:block}.bamboo-gallery figure{margin-bottom:25px}}
