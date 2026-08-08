@@ -70,3 +70,7 @@ footer>a{font-size:20px;transition:transform .25s ease,opacity .25s ease}footer>
 .project-card.mohu:hover .project-image img{transform:scale(1.035)}
 .case-board-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px}.case-board-grid figure{margin:0}.case-board-grid figure>span{display:block;margin-bottom:8px;color:var(--pink);font:800 13px "Barlow Condensed"}.case-board-grid img{display:block;width:100%;height:auto;background:#111}
 @media(max-width:760px){.project-card.mohu .project-image img{width:58%;height:58%}.case-board-grid{grid-template-columns:1fr;gap:20px}}
+
+/* Luofu AR project */
+.project-card.luofu{grid-column:1/-1}.project-card.luofu .project-image{aspect-ratio:4/1;background:#15110d}.project-card.luofu .project-image img{object-fit:cover;object-position:center}.luofu-gallery{grid-template-columns:1fr;gap:36px}.luofu-gallery figure:nth-child(n){grid-column:1/-1}.luofu-gallery figure>span{font-size:14px;padding:12px 0}.luofu-gallery img{margin-top:14px}
+@media(max-width:760px){.project-card.luofu .project-image{aspect-ratio:16/7}.luofu-gallery{display:block}.luofu-gallery figure{margin-bottom:28px}.luofu-gallery figure>span{font-size:12px}}
