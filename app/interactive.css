@@ -55,3 +55,11 @@ footer>a{font-size:20px;transition:transform .25s ease,opacity .25s ease}footer>
 .research-tabs button:hover::before,.research-tabs button:focus-visible::before,.research-tabs button.active::before{width:100%}
 .research-tabs button:hover::after,.research-tabs button:focus-visible::after,.research-tabs button.active::after{opacity:1;transform:translate(0,-50%)}
 @media(prefers-reduced-motion:reduce){.research-tabs button,.research-tabs button::before,.research-tabs button::after{transition:none}}
+
+/* Next-project and close interactions */
+.next b{font-size:clamp(24px,3vw,48px);transition:color .22s ease,transform .28s cubic-bezier(.22,1,.36,1)}
+.next:hover b,.next:focus-visible b{color:var(--pink);transform:translateX(-8px)}
+.next:focus-visible{outline:1px solid var(--pink);outline-offset:-1px}
+.close{transition:color .2s ease,border-color .2s ease,background-color .2s ease,transform .25s cubic-bezier(.22,1,.36,1)}
+.close:hover,.close:focus-visible{color:var(--pink);border-color:var(--pink);background:rgba(234,105,196,.06);transform:scale(1.04);outline:none}
+@media(max-width:760px){.next b{font-size:21px}}
