@@ -86,3 +86,7 @@ footer>a{font-size:20px;transition:transform .25s ease,opacity .25s ease}footer>
 /* Peach Rhythm three-column layout */
 .taoyun-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 16px}.taoyun-gallery figure:nth-child(n){grid-column:auto}.taoyun-gallery img{width:100%;height:auto;object-fit:contain}
 @media(max-width:760px){.taoyun-gallery{display:block}.taoyun-gallery figure{margin-bottom:25px}}
+
+/* Green poster left alignment */
+.graphic-gallery{display:block}.graphic-gallery figure{width:55%;margin:0}.graphic-gallery figure:nth-child(n){grid-column:auto}.graphic-gallery img{width:100%;height:auto;object-fit:contain}
+@media(max-width:760px){.graphic-gallery figure{width:92%}}
