@@ -63,3 +63,10 @@ footer>a{font-size:20px;transition:transform .25s ease,opacity .25s ease}footer>
 .close{transition:color .2s ease,border-color .2s ease,background-color .2s ease,transform .25s cubic-bezier(.22,1,.36,1)}
 .close:hover,.close:focus-visible{color:var(--pink);border-color:var(--pink);background:rgba(234,105,196,.06);transform:scale(1.04);outline:none}
 @media(max-width:760px){.next b{font-size:21px}}
+
+/* Mohu case cover and boards */
+.project-card.mohu .project-image{background:#d8f2f0}
+.project-card.mohu .project-image img{position:absolute;inset:0;margin:auto;width:48%;height:48%;object-fit:contain}
+.project-card.mohu:hover .project-image img{transform:scale(1.035)}
+.case-board-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px}.case-board-grid figure{margin:0}.case-board-grid figure>span{display:block;margin-bottom:8px;color:var(--pink);font:800 13px "Barlow Condensed"}.case-board-grid img{display:block;width:100%;height:auto;background:#111}
+@media(max-width:760px){.project-card.mohu .project-image img{width:58%;height:58%}.case-board-grid{grid-template-columns:1fr;gap:20px}}
