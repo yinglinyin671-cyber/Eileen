@@ -51,12 +51,12 @@ const mohuScreenGroups=[
   {title:"功能与状态页面",en:"FEATURES & STATES",start:28,count:13},
 ].map(group=>({...group,items:Array.from({length:group.count},(_,i)=>`/portfolio-new/mohu-case/interface-${String(group.start+i).padStart(2,"0")}.webp`)}));
 const luofuLabels=[
- "01 / CONCEPT & CONTEXT — 概念与文化背景",
- "02 / CULTURAL RESEARCH — 草药文化研究",
- "03 / EXPERIENCE JOURNEY — 沉浸体验路径",
+ "01 / CONCEPT COVER — 概念封面",
+ "02 / CULTURAL BACKGROUND — 文化背景",
+ "03 / DESIGN RESEARCH — 设计调研",
  "04 / AR INTERACTION — AR 交互设计",
- "05 / VISUAL SYSTEM — 视觉系统",
- "06 / EXPERIENCE OUTCOME — 体验成果",
+ "05 / EXPLORATION PATH — 探险路径",
+ "06 / DESIGN OUTCOME — 设计成果",
 ];
 const groups=["UI / UX DESIGN","BRAND DESIGN","GRAPHIC DESIGN","CULTURAL CREATIVE"];
 export default function Home(){
