@@ -74,3 +74,7 @@ footer>a{font-size:20px;transition:transform .25s ease,opacity .25s ease}footer>
 /* Luofu AR project */
 .project-card.luofu{grid-column:1/-1}.project-card.luofu .project-image{aspect-ratio:4/1;background:#15110d}.project-card.luofu .project-image img{object-fit:cover;object-position:center}.luofu-gallery{grid-template-columns:1fr;gap:36px}.luofu-gallery figure:nth-child(n){grid-column:1/-1}.luofu-gallery figure>span{font-size:14px;padding:12px 0}.luofu-gallery img{margin-top:14px}
 @media(max-width:760px){.project-card.luofu .project-image{aspect-ratio:16/7}.luofu-gallery{display:block}.luofu-gallery figure{margin-bottom:28px}.luofu-gallery figure>span{font-size:12px}}
+
+/* Qinglan brand case */
+.project-card.qinglan .project-image{background:#edf1f5}.project-card.qinglan .project-image img{object-fit:cover;object-position:top center}.qinglan-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 18px}.qinglan-gallery figure:nth-child(n){grid-column:auto}.qinglan-gallery figure:first-child{grid-column:1/-1;display:flex;flex-direction:column;align-items:center}.qinglan-gallery figure:first-child>span{align-self:stretch}.qinglan-gallery figure:first-child img{width:min(72%,1050px)}.qinglan-gallery figure>span{font-size:13px;padding:10px 0}.qinglan-gallery img{margin-top:12px}
+@media(max-width:760px){.qinglan-gallery{display:block}.qinglan-gallery figure{margin-bottom:25px}.qinglan-gallery figure:first-child img{width:100%}}
