@@ -42,3 +42,7 @@ footer>a{font-size:20px;transition:transform .25s ease,opacity .25s ease}footer>
 .screen-group{margin-top:38px}.screen-group>header{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:12px;padding:0 0 12px;border-bottom:1px solid #444}.screen-group>header b{font-size:18px}.screen-group>header span,.screen-group>header small{font:800 10px "Barlow Condensed";letter-spacing:.13em;color:#888}
 .screen-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px 12px;padding-top:14px}.screen-grid figure{margin:0;min-width:0}.screen-grid figure>span{display:block;margin-bottom:7px;color:var(--pink);font:800 13px "Barlow Condensed"}.screen-grid img{display:block;width:100%;height:auto;background:#111}
 @media(max-width:760px){.artscape-content{padding:10px 12px 70px}.artscape-chapter{padding:34px 0 55px}.artscape-chapter>h3{font-size:15px}.zoom-canvas{height:56vh;padding:10px;justify-content:flex-start}.zoom-controls{position:relative;right:auto;bottom:auto;margin:0;border-width:1px 0 0;width:100%;max-width:none;overflow:auto}.zoom-controls span{display:none}.screen-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 10px}}
+
+/* Interactive design-process tabs */
+.research-tabs button{transition:color .2s ease,padding-left .2s ease,background-color .2s ease}
+.research-tabs button:hover,.research-tabs button:focus-visible{color:var(--pink);padding-left:14px;background:rgba(234,105,196,.045);outline:none}
