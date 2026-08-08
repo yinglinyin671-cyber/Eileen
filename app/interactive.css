@@ -21,3 +21,24 @@ footer>a{font-size:20px;transition:transform .25s ease,opacity .25s ease}footer>
 
 .project-role-preview{min-height:92px;margin:22px 0 0;padding:18px 22px 20px 88px;border-top:1px solid #333;color:#c4c0bb;font-size:12px;line-height:1.85;letter-spacing:.02em}.project-card:hover .project-role-preview{color:#fff;border-top-color:var(--pink)}
 @media(max-width:760px){.project-role-preview{min-height:0;padding:16px 4px 18px 48px;font-size:11px}}
+
+/* ArtScape chapter navigator and five-up content index */
+.artscape-gallery{grid-template-columns:repeat(5,minmax(0,1fr));gap:30px 14px;padding-top:36px}
+.artscape-gallery figure:nth-child(n){grid-column:auto;scroll-margin-top:82px}
+.artscape-gallery figure>span{display:flex;align-items:flex-end;min-height:58px;padding:10px 0;font-size:15px;line-height:1.25;letter-spacing:.06em}
+.artscape-gallery img{aspect-ratio:4/5;object-fit:cover;object-position:top}
+@media(max-width:760px){.artscape-gallery{display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:10px 12px 70px}.artscape-gallery figure{margin-bottom:0}.artscape-gallery figure>span{font-size:13px;min-height:66px}.artscape-gallery img{aspect-ratio:3/4}}
+
+/* ArtScape detailed case-study chapters */
+.artscape-content{background:#050505;color:#f8f6f2;padding:18px 3vw 110px}
+.artscape-chapter{padding:42px 0 72px;border-top:1px solid #333;scroll-margin-top:78px}
+.artscape-chapter>h3{margin:0 0 24px;color:var(--pink);font:800 18px/1.25 "Barlow Condensed";letter-spacing:.08em}
+.pre-research>img{display:block;width:100%;max-height:72vh;object-fit:contain;object-position:left top;background:#111}
+.zoom-viewer{position:relative;background:#111;border:1px solid #333}
+.zoom-canvas{height:min(70vh,720px);overflow:auto;display:flex;align-items:flex-start;justify-content:center;padding:22px}
+.zoom-canvas img{display:block;max-width:100%;height:auto;transform-origin:top center;transition:transform .2s ease}
+.zoom-controls{position:sticky;right:16px;bottom:14px;margin:-58px 14px 14px auto;width:max-content;max-width:calc(100% - 28px);display:flex;align-items:center;gap:8px;padding:8px 10px;background:rgba(5,5,5,.9);border:1px solid #666;color:#fff;font:700 11px "Barlow Condensed";letter-spacing:.05em;z-index:2}
+.zoom-controls span{color:#ddd;margin-right:8px}.zoom-controls button{border:1px solid #777;background:#111;color:#fff;min-width:34px;height:30px;padding:0 8px;cursor:pointer;font:800 12px "Barlow Condensed"}.zoom-controls button:hover{background:var(--pink);color:#050505;border-color:var(--pink)}
+.screen-group{margin-top:38px}.screen-group>header{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:12px;padding:0 0 12px;border-bottom:1px solid #444}.screen-group>header b{font-size:18px}.screen-group>header span,.screen-group>header small{font:800 10px "Barlow Condensed";letter-spacing:.13em;color:#888}
+.screen-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px 12px;padding-top:14px}.screen-grid figure{margin:0;min-width:0}.screen-grid figure>span{display:block;margin-bottom:7px;color:var(--pink);font:800 13px "Barlow Condensed"}.screen-grid img{display:block;width:100%;height:auto;background:#111}
+@media(max-width:760px){.artscape-content{padding:10px 12px 70px}.artscape-chapter{padding:34px 0 55px}.artscape-chapter>h3{font-size:15px}.zoom-canvas{height:56vh;padding:10px;justify-content:flex-start}.zoom-controls{position:relative;right:auto;bottom:auto;margin:0;border-width:1px 0 0;width:100%;max-width:none;overflow:auto}.zoom-controls span{display:none}.screen-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 10px}}
