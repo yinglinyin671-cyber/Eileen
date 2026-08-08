@@ -46,3 +46,12 @@ footer>a{font-size:20px;transition:transform .25s ease,opacity .25s ease}footer>
 /* Interactive design-process tabs */
 .research-tabs button{transition:color .2s ease,padding-left .2s ease,background-color .2s ease}
 .research-tabs button:hover,.research-tabs button:focus-visible{color:var(--pink);padding-left:14px;background:rgba(234,105,196,.045);outline:none}
+
+/* Animated process navigation */
+.research-tabs button{position:relative;overflow:hidden;transform:translateX(0);padding-right:34px}
+.research-tabs button::before{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--pink);transition:width .35s cubic-bezier(.22,1,.36,1)}
+.research-tabs button::after{content:"↗";position:absolute;right:12px;top:50%;color:var(--pink);opacity:0;transform:translate(-9px,-50%);transition:opacity .2s ease,transform .3s cubic-bezier(.22,1,.36,1)}
+.research-tabs button:hover,.research-tabs button:focus-visible{transform:translateX(6px)}
+.research-tabs button:hover::before,.research-tabs button:focus-visible::before,.research-tabs button.active::before{width:100%}
+.research-tabs button:hover::after,.research-tabs button:focus-visible::after,.research-tabs button.active::after{opacity:1;transform:translate(0,-50%)}
+@media(prefers-reduced-motion:reduce){.research-tabs button,.research-tabs button::before,.research-tabs button::after{transition:none}}
