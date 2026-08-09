@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Export the portfolio as a fully static site for EdgeOne Pages.
+  output: "export",
 };
 
 export default nextConfig;
